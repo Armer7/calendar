@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container{
+  width: 450px;
+  background-color: #ffe0be;
+  padding: 10px 20px;
+  margin: 30px;
+}
+.calendar{
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 100%;
+}
+.calendar td,th{
+  border: 1px solid black;
+  text-align: center;
+}
+
+.weakDay{
+  color: red;
+}
+
+.inputDate > div:first-child{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.inputDate > div:last-child{
+  width: 100%;
+
+}
+.inputDate > div:last-child button{
+  width: 100%;
+}
+#selectDate {
+  margin: 25px;
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Calendar</title>
+  <link rel = "stylesheet" href = "calendar.css">
+</head>
+<body>
+
+<div class="container" id="cont">
+  <div class="inputDate">
+    <div>
+      <div>
+        <label for = "month">Месяц:</label><input type = "text"
+                                                  id="month"
+                                                  placeholder="число"
+                                                  onkeyup = 'checkMonth()'>
+      </div>
+      <div>
+        <label for = "year">Год:</label><input type = "text"
+                                               id="year"
+                                               placeholder=">99"
+                                               onkeyup = 'checkYear()'>
+      </div>
+    </div>
+    <div>
+      <button onclick="generate()">Сгенирировать</button>
+    </div>
+  </div>
+  <p id="selectDate"></p>
+  <table class="calendar" id="calendar">
+  </table>
+</div>
+<script src="calendar.js"></script>
+</body>
+</html>
